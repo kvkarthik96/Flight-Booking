@@ -20,7 +20,7 @@ class _MainScreenState extends State<MainScreen> {
   MainBloc mainBloc = MainBloc();
 
   final List<String> itemTitle = ["Flight Booking", "Game"];
-    final List<String> appbarTitle = ["Flight Booking", "Tic-toc-toe"];
+  final List<String> appbarTitle = ["Flight Booking", "Tic-toc-toe"];
   final List<String> iconList = [
     ImageConst.flightIconImage,
     ImageConst.gameIconImage
@@ -78,7 +78,7 @@ class _MainScreenState extends State<MainScreen> {
             onWillPop: () async {
               return false;
             },
-            child: Scaffold(),
+            child: Container(),
           );
         }
       },

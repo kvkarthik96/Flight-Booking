@@ -31,11 +31,11 @@ showCommonBottomSheet(
                     LabelText(
                         text: title,
                         color: kTertiaryColor,
-                        size: 21,
+                        size: 18,
                         fontWeight: FontWeight.bold),
                     InkWell(
                         child: const LabelText(
-                            text: "CANCEL", color: kBlackColor, size: 19),
+                            text: "CANCEL", color: kBlackColor, size: 18),
                         onTap: () => Navigator.pop(context))
                   ])),
           Expanded(

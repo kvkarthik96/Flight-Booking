@@ -111,7 +111,7 @@ class _FlightListingScreenState extends State<FlightHomeScreen> {
                     showCommonBottomSheet(
                         lists: cities,
                         selectedValue: toController.text,
-                        title: 'SELECT DEPARTURE FROM',
+                        title: 'SELECT DEPARTURE TO',
                         context: context,
                         onTap: (String sel) {
                           toController.text = sel;

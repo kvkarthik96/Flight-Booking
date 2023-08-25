@@ -13,7 +13,7 @@ class FlightCardWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 10.h),
+      padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 10.h),
       decoration: BoxDecoration(
           color: kWhiteColor, borderRadius: BorderRadius.circular(10)),
       child: Row(
@@ -21,10 +21,10 @@ class FlightCardWidget extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           SizedBox(
-              height: 50.h,
-              width: 50.h,
+              height: 48.h,
+              width: 48.h,
               child: Image.asset(flight.flightImg!, fit: BoxFit.cover)),
-          SizedBox(width: 12.w),
+          SizedBox(width: 10.w),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.center,
@@ -40,41 +40,28 @@ class FlightCardWidget extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      LabelText(
-                        text: flight.flightFrom!,
-                        size: 14,
-                      ),
+                      LabelText(text: flight.flightFrom!, size: 14),
                       AppWidgets.getDefaultSizedBox(height: 3),
                       LabelText(
-                        text: flight.flightFromTime!,
-                        size: 16,
-                        fontWeight: FontWeight.w500,
-                      ),
+                          text: flight.flightFromTime!,
+                          size: 16,
+                          fontWeight: FontWeight.w500),
                       AppWidgets.getDefaultSizedBox(height: 3),
                       LabelText(
                           text: flight.flightFromDate!,
-                          size: 12,
+                          size: 10,
                           color: kTertiaryColor),
                     ],
                   ),
                   SizedBox(width: 8.w),
                   Column(
                     children: [
-                      LabelText(
-                        text: flight.flightDuration!,
-                        size: 14,
-                      ),
+                      LabelText(text: flight.flightDuration!, size: 12),
                       SizedBox(
-                        width: 75.w,
-                        child: const Divider(
-                          height: 2,
-                          color: kBlackColor,
-                        ),
+                        width: 65.w,
+                        child: const Divider(height: 2, color: kBlackColor),
                       ),
-                      LabelText(
-                        text: flight.flightStops!,
-                        size: 14,
-                      )
+                      LabelText(text: flight.flightStops!, size: 12)
                     ],
                   ),
                   SizedBox(width: 8.w),
@@ -83,25 +70,23 @@ class FlightCardWidget extends StatelessWidget {
                       LabelText(text: flight.flightTo!, size: 14),
                       AppWidgets.getDefaultSizedBox(height: 3),
                       LabelText(
-                        text: flight.flightToTime!,
-                        size: 16,
-                        fontWeight: FontWeight.w600,
-                      ),
+                          text: flight.flightToTime!,
+                          size: 16,
+                          fontWeight: FontWeight.w600),
                       AppWidgets.getDefaultSizedBox(height: 3),
                       LabelText(
-                        text: flight.flightToDate!,
-                        size: 12,
-                        color: kTertiaryColor,
-                      ),
+                          text: flight.flightToDate!,
+                          size: 10,
+                          color: kTertiaryColor),
                     ],
                   ),
-                  SizedBox(width: 10.w),
+                  SizedBox(width: 8.w),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
                       LabelText(
-                        text: '₹ ${flight.flightFare}',
-                        size: 16,
+                        text: '₹${flight.flightFare}',
+                        size: 15,
                         color: kBlackColor,
                         fontWeight: FontWeight.bold,
                       )

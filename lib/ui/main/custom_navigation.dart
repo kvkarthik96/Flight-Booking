@@ -46,7 +46,7 @@ class CustomBottomNavigationBar extends StatelessWidget {
         onChange!(index);
       },
       child: SizedBox(
-        height: 60,
+        height: 60.h,
         width: 1.sw / iconList.length - 2.5,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
